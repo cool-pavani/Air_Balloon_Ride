@@ -1,16 +1,35 @@
-<!DOCTYPE html><html><head>
-  <script src="p5.min.js"></script>
-  <script src="p5.dom.min.js"></script>
-  <script src="p5.sound.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    
+    <script src="p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+    
+    <script>
 
-</head>
+        const firebaseConfig = {
+    apiKey: "AIzaSyB1ghXLZO84LP9cS-iJ3xJvE8Lm8_dzwHQ",
+    authDomain: "pro-35-75e31.firebaseapp.com",
+    projectId: "pro-35-75e31",
+    storageBucket: "pro-35-75e31.appspot.com",
+    messagingSenderId: "453622835253",
+    appId: "1:453622835253:web:1cea497e2756b736ab297c"
+  };
 
-<body>
-  <script src="matter.min.js"></script>
-  <script src="box.js"></script>
-  <script src="sketch.js"></script>
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+    
 
 
-</body></html>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+    </body>
+</html>
